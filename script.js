@@ -15,16 +15,16 @@ let getJoke = () => {
 getJoke();
 jokeBtn.addEventListener('click', getJoke);
 
-const copyJoke = () => {
-    const jokeText = jokeContainer.innerText;
-    navigator.clipboard.writeText(jokeText)
-        .then(() => {
-            console.log('Joke copied to clipboard!');
-        })
-        .catch((error) => {
-            console.error('Failed to copy joke:', error);
-        });
-};
+// const copyJoke = () => {
+//     const jokeText = jokeContainer.innerText;
+//     navigator.clipboard.writeText(jokeText)
+//         .then(() => {
+//             console.log('Joke copied to clipboard!');
+//         })
+//         .catch((error) => {
+//             console.error('Failed to copy joke:', error);
+//         });
+// };
 
-const copyBtn = document.getElementById('copyBtn');
-copyBtn.addEventListener('click', copyJoke);
+// const copyBtn = document.getElementById('copyBtn');
+// copyBtn.addEventListener('click', copyJoke);
